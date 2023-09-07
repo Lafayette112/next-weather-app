@@ -32,25 +32,25 @@ export default function Home() {
   } else {
 
     return (
-      <div>
+      <div className="box-border m-0 p-0">
         
         {/* Overlay */}
         <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
   
         {/* Background image */}
         <Image 
-        src='/img/pexels-eberhard-grossgasteiger-12527038.jpg'
+        src='/img/pexels-eberhard-grossgasteiger.jpg'
         fill
-        className="sm:object-cover" 
+        className="md:object-cover md:bg-bigscreen bg-fixed" 
         />
   
         {/* Search */}
         <div className="relative flex justify-between items-center max-w-[500px] w-full m-auto pt-4 text-white z-10">
-          <form onSubmit={fetchWeather} className="flex justify-between items-center w-full m-auto p-3 bg-transparent border border-gray-300 text-white rounded-2xl">
+          <form onSubmit={fetchWeather} className="flex justify-between items-center w-full m-auto p-4 mx-4 bg-transparent border border-gray-300 text-white rounded-2xl">
             <div>
               <input 
               onChange={(e) => setCity(e.target.value)}
-              className="bg-transparent border-none text-white focus:outline-none text-2xl" 
+              className="bg-transparent border-none text-white focus:outline-none text-2xl placeholder-white" 
               type="text" 
               placeholder="Search city" 
               />
