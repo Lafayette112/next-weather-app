@@ -35,13 +35,13 @@ export default function Home() {
       <div>
         
         {/* Overlay */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/40 z-[1]" />
+        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/30 z-[1]" />
   
         {/* Background image */}
         <Image 
-        src={'https://images.pexels.com/photos/1587942/pexels-photo-1587942.jpeg'} 
+        src='/img/pexels-eberhard-grossgasteiger-12527038.jpg'
         fill
-        className="object-cover" 
+        className="sm:object-cover" 
         />
   
         {/* Search */}
